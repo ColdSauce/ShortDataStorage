@@ -12,7 +12,7 @@ If you'd like to get data from a specific shortened URL, you can explicitly pass
 
 `python main.py <some shortened URL> > file_to_save_data_to.bin`
 
-To save data to a URL shortening service, this code encodes all the data in URL Safe Base64, splits it into batched chunks, calls the URL shortening service's API with a url `http://<the base 64 encoded chunk` which the URL shortening service takes in no problem. The service returns a shortened URL for the data. Then, all of these shortened URLS that were generated are compiled into a string that separates them with `_` underscores. This string is then itself shortened and from that, one
+To save data to a URL shortening service, this code encodes all the data in URL Safe Base64, splits it into batched chunks, calls the URL shortening service's API with a url `http://<the base 64 encoded chunk>` which the URL shortening service takes in no problem. The service returns a shortened URL for the data. Then, all of these shortened URLS that were generated are compiled into a string that separates them with `_` underscores. This string is then itself shortened and from that, one
 shortened URL is generated. 
 
 The way to get the data back is basically the process just described but in reverse. 
