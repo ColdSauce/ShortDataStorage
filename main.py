@@ -8,6 +8,8 @@ import argparse
 session = requests.Session()
 
 # Write the URL shortener's base URL here:
+# For example, stefanaleksic.com/
+# Make sure to have the / at the end!
 SHORTENER_URL = ""
 
 
